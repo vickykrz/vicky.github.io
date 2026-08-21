@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vicky Kumar — Earth Science × Data Science × Mathematics</title>
+<meta name="description" content="Portfolio of Vicky Kumar, IISER Kolkata — earth science research, data science, optimization, and a daily puzzle corner.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ====================== NAV ====================== -->
+<header class="nav" id="nav">
+  <a href="#home" class="nav__brand">VK<span class="nav__brand-dot">·</span></a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav__links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#research">Field Log</a>
+    <a href="#puzzle">Puzzle Corner</a>
+    <a href="#toolkit">Toolkit</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ====================== HERO ====================== -->
+<section class="hero" id="home">
+  <canvas id="seismo" class="hero__canvas" aria-hidden="true"></canvas>
+  <div class="hero__inner">
+    <p class="hero__eyebrow">Station VK-01 · IISER Kolkata</p>
+    <h1 class="hero__title">Vicky Kumar</h1>
+    <p class="hero__tagline">Reading signal from the ground and from data.<br class="br-desktop">
+      Earth science research, optimization, and a bit of mathematical mischief.</p>
+    <div class="hero__cta">
+      <a href="#research" class="btn btn--primary">See the field log</a>
+      <a href="#puzzle" class="btn btn--ghost">Try today's puzzle</a>
+    </div>
+    <p class="hero__hint">move your cursor across the trace above ↑</p>
+  </div>
+  <div class="hero__scroll" aria-hidden="true"><span></span> scroll</div>
+</section>
+
+<main>
+
+<!-- ====================== ABOUT ====================== -->
+<section class="section" id="about">
+  <div class="section__head">
+    <p class="section__eyebrow">01 / Field notes</p>
+    <h2 class="section__title">About</h2>
+  </div>
+  <div class="about__grid">
+    <p class="about__text">
+      I'm an earth science researcher at IISER Kolkata working at the seam between
+      <strong>geophysics, optimization, and data science</strong> — one week reading spectral
+      signatures out of seismograms, the next building Gurobi models to route a supply-chain
+      company's field staff. I like problems that force you to think in systems: rock layers,
+      wave equations, delivery routes, probability distributions. Same instinct, different
+      instrument.
+    </p>
+    <ul class="about__facts">
+      <li><span>Base</span>IISER Kolkata, India</li>
+      <li><span>Focus</span>Geophysics · Optimization · ML</li>
+      <li><span>Degree</span>BS, Earth Science (2021–2025)</li>
+      <li><span>Reads</span>Seismograms &amp; spreadsheets, equally</li>
+    </ul>
+  </div>
+</section>
+
+<div class="divider" data-divider="1"></div>
+
+<!-- ====================== RESEARCH / FIELD LOG ====================== -->
+<section class="section section--paper" id="research">
+  <div class="section__head">
+    <p class="section__eyebrow">02 / Field log</p>
+    <h2 class="section__title">Research &amp; Projects</h2>
+  </div>
+
+  <ol class="log">
+    <li class="log__entry">
+      <div class="log__meta"><span class="log__date">May – Aug 2025</span><span class="log__place">IIM Kashipur</span></div>
+      <h3 class="log__title">Crop Residue-to-Industry Recommendation Model</h3>
+      <p class="log__desc">Built a data-driven recommendation model predicting optimal industrial
+        utilization pathways for agricultural crop residues, aimed at improving sustainable
+        biomass management and resource use.</p>
+      <a class="log__cert" href="assets/certificates/crop-residue-certificate.pdf" target="_blank" rel="noopener">📄 View certificate</a>
+    </li>
+
+    <li class="log__entry">
+      <div class="log__meta"><span class="log__date">2025</span><span class="log__place">IIM Kashipur — Live Project</span></div>
+      <h3 class="log__title">Supply Chain Optimization Tool</h3>
+      <p class="log__desc">Decision-support tool for a 400+ employee supply chain company:
+        scheduling and workforce coordination, field-route optimization to cut travel time and
+        cost, built on Gurobi mathematical models. Advisor: Prof. Sunil Kumar Jauhar.</p>
+      <a class="log__cert" href="assets/certificates/supply-chain-project-report.pdf" target="_blank" rel="noopener">📄 View project report</a>
+    </li>
+
+    <li class="log__entry">
+      <div class="log__meta"><span class="log__date">2024</span><span class="log__place">IISER Kolkata · Earth Sciences</span></div>
+      <h3 class="log__title">Spectral Body Wave Analysis for Source Parameter Estimation</h3>
+      <p class="log__desc">Spectral analysis of body seismic waves using SAC (Seismic Analysis
+        Code) to estimate earthquake source parameters — signal processing and spectral modeling
+        of wave characteristics. Advisor: Prof. Supriyo Mitra.</p>
+      <a class="log__cert" href="assets/certificates/seismic-source-parameters-report.pdf" target="_blank" rel="noopener">📄 View report</a>
+    </li>
+
+    <li class="log__entry">
+      <div class="log__meta"><span class="log__date">2024</span><span class="log__place">IISER Kolkata</span></div>
+      <h3 class="log__title">Seismic Data Analysis Calculator</h3>
+      <p class="log__desc">Computational tools for epicentral distance calculation, earthquake
+        location estimation, and seismic hazard assessment — built to speed up earthquake
+        analysis and disaster preparedness workflows.</p>
+      <a class="log__cert" href="assets/certificates/seismic-calculator-project.pdf" target="_blank" rel="noopener">📄 View project notes</a>
+    </li>
+
+    <li class="log__entry">
+      <div class="log__meta"><span class="log__date">2023</span><span class="log__place">Himalayan Siwalik Basin</span></div>
+      <h3 class="log__title">Sedimentology Fieldwork</h3>
+      <p class="log__desc">Quantitative analysis of sedimentary rock samples from the Himalayan
+        Siwalik Basin to investigate depositional history and basin evolution. Advisor: Prof.
+        S. K. M. Mandal.</p>
+      <a class="log__cert" href="assets/certificates/sedimentology-fieldwork-report.pdf" target="_blank" rel="noopener">📄 View report</a>
+    </li>
+  </ol>
+</section>
+
+<div class="divider" data-divider="2"></div>
+
+<!-- ====================== PUZZLE CORNER ====================== -->
+<section class="section" id="puzzle">
+  <div class="section__head">
+    <p class="section__eyebrow">03 / Margin notes</p>
+    <h2 class="section__title">Puzzle Corner</h2>
+    <p class="section__sub">A new logic / math puzzle every day. Solve it, keep your streak alive.</p>
+  </div>
+
+  <div class="puzzle-card">
+    <div class="puzzle-card__top">
+      <span class="puzzle-card__tag" id="puzzleCategory">Loading…</span>
+      <span class="puzzle-card__streak" id="streakDisplay">🔥 0 day streak</span>
+    </div>
+    <p class="puzzle-card__question" id="puzzleQuestion">Loading today's puzzle…</p>
+
+    <form class="puzzle-card__form" id="puzzleForm" autocomplete="off">
+      <input type="text" id="puzzleInput" placeholder="Your answer…" aria-label="Your answer">
+      <button type="submit" class="btn btn--primary">Check</button>
+    </form>
+
+    <div class="puzzle-card__actions">
+      <button type="button" class="btn btn--text" id="hintBtn">Need a hint?</button>
+      <button type="button" class="btn btn--text" id="archiveToggle">Past puzzles ↓</button>
+    </div>
+
+    <p class="puzzle-card__feedback" id="puzzleFeedback" aria-live="polite"></p>
+  </div>
+
+  <div class="archive" id="archive" hidden>
+    <h3 class="archive__title">Last 5 days</h3>
+    <ul class="archive__list" id="archiveList"></ul>
+  </div>
+</section>
+
+<div class="divider" data-divider="3"></div>
+
+<!-- ====================== TOOLKIT ====================== -->
+<section class="section section--paper" id="toolkit">
+  <div class="section__head">
+    <p class="section__eyebrow">04 / Instruments</p>
+    <h2 class="section__title">Toolkit</h2>
+  </div>
+
+  <div class="toolkit__grid">
+    <div class="toolkit__group">
+      <h3>Programming</h3>
+      <p>Python, PyTorch, R, C, C++</p>
+    </div>
+    <div class="toolkit__group">
+      <h3>Web</h3>
+      <p>HTML5, PHP, JSP, JavaScript</p>
+    </div>
+    <div class="toolkit__group">
+      <h3>Data</h3>
+      <p>SQL, MySQL, Apache</p>
+    </div>
+    <div class="toolkit__group">
+      <h3>Modeling &amp; Tools</h3>
+      <p>Gurobi, Git, LaTeX, NumPy / SciPy</p>
+    </div>
+  </div>
+
+  <div class="course__wrap">
+    <h3 class="course__title">Relevant coursework</h3>
+    <ul class="course__list">
+      <li>Probability &amp; Statistics</li>
+      <li>Linear Algebra</li>
+      <li>Data Structures &amp; Algorithms</li>
+      <li>Calculus &amp; Optimization</li>
+      <li>AI / ML</li>
+      <li>Database Management &amp; Warehousing</li>
+    </ul>
+  </div>
+</section>
+
+<div class="divider" data-divider="4"></div>
+
+<!-- ====================== ACHIEVEMENTS ====================== -->
+<section class="section" id="achievements">
+  <div class="section__head">
+    <p class="section__eyebrow">05 / Readings</p>
+    <h2 class="section__title">Achievements &amp; Recognition</h2>
+  </div>
+
+  <ul class="achieve">
+    <li class="achieve__item">
+      <span class="achieve__year">2024</span>
+      <div>
+        <p><strong>International Youth Math Challenge (IYMC 2024), Germany</strong> — completed
+          both the Qualification Round and Pre-Final Round.</p>
+        <a class="log__cert" href="assets/certificates/iymc-2024-certificate.pdf" target="_blank" rel="noopener">📄 View certificate</a>
+      </div>
+    </li>
+    <li class="achieve__item">
+      <span class="achieve__year">2021</span>
+      <div>
+        <p><strong>JEE Main</strong> — ranked in the top 0.1% of candidates.</p>
+        <a class="log__cert" href="assets/certificates/jee-main-scorecard.pdf" target="_blank" rel="noopener">📄 View scorecard</a>
+      </div>
+    </li>
+    <li class="achieve__item">
+      <span class="achieve__year">2021</span>
+      <div>
+        <p><strong>IISER Aptitude Test (IAT)</strong> — ranked in the top 0.06% of candidates.</p>
+        <a class="log__cert" href="assets/certificates/iat-scorecard.pdf" target="_blank" rel="noopener">📄 View scorecard</a>
+      </div>
+    </li>
+  </ul>
+
+  <h3 class="beyond__title">Beyond the lab</h3>
+  <ul class="beyond__list">
+    <li>Event Management &amp; Logistics, Cult Fest — IISER Kolkata (2023)</li>
+    <li>Organizer, E-Cell IISER Kolkata — Sponsored Team, Inquivesta Sci-Fest (2022)</li>
+    <li>Hostel Representative, IISER Kolkata (2022)</li>
+  </ul>
+</section>
+
+<div class="divider" data-divider="5"></div>
+
+<!-- ====================== CERTIFICATES ====================== -->
+<section class="section section--paper" id="certificates">
+  <div class="section__head">
+    <p class="section__eyebrow">06 / Proof</p>
+    <h2 class="section__title">Certificates &amp; Reports</h2>
+    <p class="section__sub">Every entry above links out to a PDF here — this is just the shelf, all in one place.</p>
+  </div>
+
+  <div class="cert-grid">
+    <a class="cert-card" href="assets/certificates/crop-residue-certificate.pdf" target="_blank" rel="noopener">
+      <span class="cert-card__icon">🌾</span>
+      <span class="cert-card__label">Crop Residue Recommendation Model</span>
+    </a>
+    <a class="cert-card" href="assets/certificates/supply-chain-project-report.pdf" target="_blank" rel="noopener">
+      <span class="cert-card__icon">🚚</span>
+      <span class="cert-card__label">Supply Chain Optimization — Report</span>
+    </a>
+    <a class="cert-card" href="assets/certificates/seismic-source-parameters-report.pdf" target="_blank" rel="noopener">
+      <span class="cert-card__icon">📈</span>
+      <span class="cert-card__label">Spectral Body Wave Analysis</span>
+    </a>
+    <a class="cert-card" href="assets/certificates/seismic-calculator-project.pdf" target="_blank" rel="noopener">
+      <span class="cert-card__icon">🧮</span>
+      <span class="cert-card__label">Seismic Data Analysis Calculator</span>
+    </a>
+    <a class="cert-card" href="assets/certificates/sedimentology-fieldwork-report.pdf" target="_blank" rel="noopener">
+      <span class="cert-card__icon">🪨</span>
+      <span class="cert-card__label">Sedimentology Fieldwork — Siwalik Basin</span>
+    </a>
+    <a class="cert-card" href="assets/certificates/iymc-2024-certificate.pdf" target="_blank" rel="noopener">
+      <span class="cert-card__icon">🏅</span>
+      <span class="cert-card__label">IYMC 2024 Certificate</span>
+    </a>
+    <a class="cert-card" href="assets/certificates/jee-main-scorecard.pdf" target="_blank" rel="noopener">
+      <span class="cert-card__icon">🎓</span>
+      <span class="cert-card__label">JEE Main Scorecard</span>
+    </a>
+    <a class="cert-card" href="assets/certificates/iat-scorecard.pdf" target="_blank" rel="noopener">
+      <span class="cert-card__icon">🎓</span>
+      <span class="cert-card__label">IISER Aptitude Test Scorecard</span>
+    </a>
+  </div>
+  <p class="cert-note">Missing a file? See <code>assets/certificates/README.md</code> in the project for how to drop your PDFs in.</p>
+</section>
+
+<div class="divider" data-divider="6"></div>
+
+<!-- ====================== EDUCATION ====================== -->
+<section class="section" id="education">
+  <div class="section__head">
+    <p class="section__eyebrow">07 / Record</p>
+    <h2 class="section__title">Education</h2>
+  </div>
+
+  <ul class="edu">
+    <li class="edu__item">
+      <span class="edu__year">2021 – 2025</span>
+      <div>
+        <p><strong>BS in Earth Science</strong> — IISER Kolkata, CGPA 7.0</p>
+        <p class="edu__note">Interdisciplinary science — climate data science &amp; analytics</p>
+      </div>
+    </li>
+    <li class="edu__item">
+      <span class="edu__year">2020</span>
+      <div><p><strong>Class 12</strong> — 83.8%, College of Commerce, Arts &amp; Science, Patna</p></div>
+    </li>
+    <li class="edu__item">
+      <span class="edu__year">2018</span>
+      <div><p><strong>Class 10</strong> — 82.8%, Himalayan Residential School, Patna</p></div>
+    </li>
+  </ul>
+</section>
+
+<div class="divider" data-divider="7"></div>
+
+<!-- ====================== CONTACT ====================== -->
+<section class="section section--paper" id="contact">
+  <div class="section__head">
+    <p class="section__eyebrow">08 / Reach the station</p>
+    <h2 class="section__title">Contact</h2>
+  </div>
+
+  <div class="contact__grid">
+    <div class="contact__block">
+      <h3>Get in touch</h3>
+      <p><a href="mailto:vicky4office@gmail.com">vicky4office@gmail.com</a></p>
+      <p>+91 6206574982</p>
+      <p>
+        <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+    <div class="contact__block">
+      <h3>Referee</h3>
+      <p><strong>Dr. Sunil Kumar Jauhar</strong><br>
+      Assistant Professor, Operations Management &amp; Decision Sciences<br>
+      IIM Kashipur<br>
+      <a href="mailto:sunil.jauhar@iimkashipur.ac.in">sunil.jauhar@iimkashipur.ac.in</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>Vicky Kumar · IISER Kolkata · Built with plain HTML, CSS &amp; JS · <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
